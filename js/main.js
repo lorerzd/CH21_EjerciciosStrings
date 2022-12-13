@@ -7,6 +7,7 @@ let btnEnviar = document.getAnimations("btnEnviar");
     
     let emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     let exampleFormControlInput1 = document.getElementById("exampleFormControlInput1");
+    let exampleFormControlInput2 = document.getElementById("exampleFormControlInput2");
     let exampleFormControlTextarea1 = document.getElementById("exampleFormControlTextarea1");
     let alertError = document.getElementById("alertError");
     exampleFormControlTextarea1.value = exampleFormControlTextarea1.value.trim();
@@ -35,6 +36,16 @@ let btnEnviar = document.getAnimations("btnEnviar");
         alertError.innerHTML += "El correo no es valido"
         
     }
+    
+    let RFCRegex = / /;
+    if (exampleFormControlInput2.value.match(RFCRegex) == null) {
+        alertError.style.display="block";
+        alertError.innerHTML += "El RFC no es valido"
+        
+    }
+
+
+
 });
 
 

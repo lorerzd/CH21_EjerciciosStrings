@@ -22,3 +22,17 @@ for (let index = 0; index< nombre.length; index++) {
 } //for index
 
 console.log(letra, contFinal);
+
+//Entrada
+"Laura Aline"
+//Salida
+"enilA aruaL"
+
+function reves(str) {
+    let tmpStr="";
+    for (let indice = str.length-1; indice >=0; indice--) {
+        tmpStr += str.charAt(indice);
+        
+    }
+    return tmpStr;
+}

@@ -37,7 +37,8 @@ let btnEnviar = document.getAnimations("btnEnviar");
         
     }
     
-    let RFCRegex = / /;
+    let RFCRegex = /^ [A-Z]{4}[0-9]{6}[A-Z0-9]{3}$/;
+    ///^ [A-Z]{4}[0-9]{6}[A-Z0-9]{3}$/;
     if (exampleFormControlInput2.value.match(RFCRegex) == null) {
         alertError.style.display="block";
         alertError.innerHTML += "El RFC no es valido"
